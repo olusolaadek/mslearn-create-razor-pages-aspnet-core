@@ -34,7 +34,7 @@
     <input asp-for="NewPizza.Price" class="form-control" />
     <span asp-validation-for="NewPizza.Price" class="text-danger"></span>
 </div>
-<div class="form-group">
+<div class="form-group mt-2">
     <input type="submit" value="Create" class="btn btn-primary" />
 </div>
 </form>
@@ -58,9 +58,9 @@
     <td>@pizza.Size</td>
     <td>@(pizza.IsGlutenFree ? "✔️" : string.Empty)</td>
     <td>
-        <form method="post" asp-web-handler="Delete" asp-route-id="@pizza.Id">
-            <button class="btn btn-danger">Delete</button>
-            </form>
+         <form method="post" asp-page-handler="Delete" asp-route-id="@pizza.Id">
+                    <button class="btn btn-danger">Delete</button>
+                </form>
 
     </td>
 </tr>

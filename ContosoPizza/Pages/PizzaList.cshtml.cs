@@ -11,12 +11,18 @@ namespace ContosoPizza.Pages
         [BindProperty]
         public Pizza NewPizza { get; set; } = default!;
         public IList<Pizza> PizzaList { get; set; } = default!;
+        public Pizza Pizza { get; set; } = default!;
 
         public PizzaListModel(PizzaService pizzaService)
         {
             _pizzaService = pizzaService;
         }
         public void OnGet()
+        {
+            PizzaList = _pizzaService.GetPizzas();
+        }
+
+        public void OnPostView(int id)
         {
             PizzaList = _pizzaService.GetPizzas();
         }

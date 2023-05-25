@@ -1,5 +1,11 @@
 # Starter app for Create a web UI with ASP.NET Core
 
+# Source material
+https://learn.microsoft.com/en-us/training/modules/create-razor-pages-aspnet-core/1-introduction
+
+# Additional Material
+https://www.learnrazorpages.com/razor-pages/handler-methods
+
 Welcome! This is the starter app for the [Create a web UI with ASP.NET Core](https://learn.microsoft.com/training/modules/create-razor-pages-aspnet-core/) Microsoft Training module.
 
 ## Completed version
